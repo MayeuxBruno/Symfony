@@ -1,5 +1,5 @@
 {
     "require": {
-        "symfony/web-server-bundle": "4.4.*"
+        "symfony/web-server-bundle": "^4.4"
     }
 }
