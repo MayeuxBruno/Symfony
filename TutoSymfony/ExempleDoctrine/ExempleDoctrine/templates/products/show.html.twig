@@ -43,6 +43,14 @@
                 <th>Discontinued</th>
                 <td>{{ product.Discontinued ? 'Yes' : 'No' }}</td>
             </tr>
+            <tr>
+            <th>Image</th>
+                {% if product.Picture %}
+                    <td><img src="{{ asset( '/images/produit/' ~  product.Picture ) }}" alt="Photo Article"></td>
+                {% else %}
+                    <td>Aucune image renseignée</td>
+                {% endif %}
+            </tr>
         </tbody>
     </table>
 

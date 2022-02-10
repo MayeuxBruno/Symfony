@@ -33,8 +33,8 @@
                 <td>{{ product.RecorderLevel }}</td>
                 <td>{{ product.Discontinued ? 'Yes' : 'No' }}</td>
                 <td>
-                    <a href="{{ path('products_show', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('products_edit', {'id': product.id}) }}">edit</a>
+                    <a class="btn btn-success"href="{{ path('products_show', {'id': product.id}) }}">show</a>
+                    <a class="btn btn-warning" href="{{ path('products_edit', {'id': product.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -45,5 +45,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('products_new') }}">Create new</a>
+    <a class="btn btn-success" href="{{ path('products_new') }}">Create new</a>
 {% endblock %}
